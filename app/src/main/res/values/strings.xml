@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">InventariApp1.0.3.9</string>
+    <string name="bienvenido_a">Bienvenido a</string>
+    <string name="bienvenidos_a">Bienvenidos a</string>
+    <string name="inventariapp">InventariApp</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="esta_es_una_app_desarrollada_con_fines_academicos">Esta es una app desarrollada con fines academicos.</string>
+    <string name="creada_para_npoder_mejorar_nel_manejo_de_ninventario_del_nnegocio_establecido">Creada para\npoder mejorar\nel manejo de\ninventario del\nnegocio establecido.</string>
 </resources>
