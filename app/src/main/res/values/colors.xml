@@ -4,5 +4,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg">#00FF76</color>
     <color name="bg_translucent">#6000FF76</color>
+    <color name="bg_dark">#80000000</color>
+    <color name="button_gray">#BCB8B8</color>
+    <color name="exit">#FF0000</color>
+    <color name="ok">#08FF00</color>
+    <color name="op">#90FFE0</color>
 
 </resources>

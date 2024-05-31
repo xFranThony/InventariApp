@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/bg">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/boton_regreso" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Ver Inventario"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_gray"
+            android:text="Categoria"> </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_gray"
+            android:text="Precio"> </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_gray"
+            android:text="Stock"> </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todos"> </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/button_gray"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <!-- Encabezado de la tabla -->
+                <TableRow>
+                    <TextView
+                        android:text="ID"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Nombre"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Codigo"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Categoria"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Precio"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Stock"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <!-- Ejemplo de 20 productos -->
+                <TableRow>
+                    <TextView
+                        android:text="1"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 1"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="12345"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Electrónica"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$50"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="10"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Producto 2"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="67890"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="Ropa"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="$25"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:text="15"
+                        android:padding="8dp"
+                        android:gravity="center"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

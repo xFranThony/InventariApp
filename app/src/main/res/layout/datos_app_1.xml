@@ -5,25 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img1"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/top_2"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_translucent"
         android:orientation="horizontal">
 
-        <!-- FrameLayout para el fondo translúcido -->
-        <FrameLayout
-            android:id="@+id/top_24"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/bg_translucent"
-            android:orientation="horizontal"></FrameLayout>
-
-        <!-- TextView para el texto -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="casual"
@@ -33,14 +25,42 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
-    </FrameLayout>
+    </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/center_2"
+    <RelativeLayout
+        android:id="@+id/msj2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="200dp">
 
+        <View
+            android:layout_width="189dp"
+            android:layout_height="301dp"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.7"
+            android:background="@drawable/rounded_corner_background" />
+
+        <TextView
+            android:id="@+id/text_overlay"
+            android:layout_width="193dp"
+            android:layout_height="103dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Ten control total sobre tu inventario y ventas."
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/text_overlay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cdc" />
+
+    </RelativeLayout>
 
 </LinearLayout>
-
